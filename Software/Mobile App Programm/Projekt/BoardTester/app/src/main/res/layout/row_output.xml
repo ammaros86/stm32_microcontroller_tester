@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/pinTitleOutput"
+            android:layout_weight="1" android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="5dip" android:gravity="center"/>
+        <ImageView
+            android:id="@+id/outputNoPullHigh"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputNoPullHighImage" />
+        <ImageView
+            android:id="@+id/outputNoPullLow"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputNoPullLowImage" />
+        <ImageView
+            android:id="@+id/outputPullDownHigh"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputPullDownHighImage" />
+        <ImageView
+            android:id="@+id/outputPullDownLow"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputPullDownLowImage"/>
+        <ImageView
+            android:id="@+id/outputPullUpHigh"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputPullUpHighImage"/>
+        <ImageView
+            android:id="@+id/outputPullUpLow"
+            android:layout_weight="1"
+            android:padding="5dip" android:gravity="center"
+            android:contentDescription="@string/outputPullUpLowImage"/>
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="testResults.GpiosInputTestResultActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="268dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/nucleo_pins"
+                    android:contentDescription="@string/nucleo_gpio_pins" />
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="@string/back_button" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_gpio_input"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/GpioInputTestTimeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="11sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/testResultTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:text="@string/nucleo_board_id"
+                    android:textStyle="bold"
+                    android:layout_gravity="start" />
+                <TextView
+                    android:id="@+id/testGpioInputBoardID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/testResultTitle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="5dp"
+                android:text="@string/not_tested_gpio"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+            <TextView
+                android:id="@+id/notTestedGpioInputPins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:text="@string/abbreviation"
+                    android:textStyle="bold"
+                    android:layout_gravity="start" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="start"
+                    android:text="@string/abbreviation_text"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dcdcdc"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.45"
+                    tools:ignore="UselessParent">
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="@string/gpio"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="start"/>
+                        <TextView
+                            android:text="@string/n_p_h"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                        <TextView
+                            android:text="@string/n_p_l"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                        <TextView
+                            android:text="@string/p_d_h"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                        <TextView
+                            android:text="@string/p_d_l"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                        <TextView
+                            android:text="@string/p_u_h"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                        <TextView
+                            android:text="@string/p_u_l"
+                            android:textStyle="bold"
+                            android:layout_weight="1" android:background="#dcdcdc"
+                            android:textColor="#000000"
+                            android:padding="5dip" android:gravity="center"/>
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark1"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stackFromBottom="false"
+                        />
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

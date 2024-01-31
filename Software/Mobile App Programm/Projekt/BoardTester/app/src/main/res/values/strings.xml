@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">BoardTester</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="wait_message">please wait…</string>
+
+    <string name="flash_upload_program_fail">failed to upload Test-Program</string>
+    <string name="ok">OK</string>
+    <string name="fail">fail</string>
+
+    <string name="flash_test_fail">Flash-Memory Test failed</string>
+
+    <string name="board_connected">Board connected</string>
+    <string name="board_not_correctly_connected_errors">Board not correctly connected or Errors</string>
+    <string name="no_board_connected">No Board connected or Power Pins Errors</string>
+    <string name="no_test_result">No Test results available</string>
+
+    <string name="tested">Tested</string>
+    <string name="test_failed">Test failed</string>
+    <string name="failed">failed</string>
+
+    <string name="gnd_connection_ok">GND Pins Connection </string>
+    <string name="gnd_connection_error"> GND Pins Connection Error</string>
+
+    <string name="power_pins_ok">Power Pins OK</string>
+    <string name="power_pins_error">Power Pins Errors</string>
+
+    <string name="new_nucleo_board">New Nucleo-Board</string>
+    <string name="board_id">Nucleo Board Name</string>
+    <string name="boards_list_empty">Boards List is empty</string>
+    <string name="boards_list">Nucleo Boards List</string>
+    <string name="board_error">Board Data Error</string>
+    <string name="flash_state_image">flash state Image</string>
+    <string name="nucleo_board_flash">Flash-Memory Test Result</string>
+    <string name="flash_information">Flash-Memory Information :</string>
+    <string name="flash_information_title_image">flash information title image</string>
+    <string name="flash_ok">Flash OK</string>
+    <string name="flash_error">Flash Error</string>
+    <string name="power_pin_state">power pin state</string>
+    <string name="voltage">Voltage (V)</string>
+    <string name="pin">Pin</string>
+    <string name="power_pins">power pins</string>
+    <string name="nucleo_power_pins">Power and GND Pins Test Result</string>
+    <string name="abbreviation">Abbreviation</string>
+    <string name="abbreviation_text"> - N.P.H = No Pull HIGH \n - N.P.L = No Pull LOW \n - P.D.H = Pull Down HIGH \n - P.D.L = Pull Down LOW \n - P.U.H = Pull Up HIGH \n - P.U.L = Pull Up LOW </string>
+    <string name="not_tested_gpio">Not tested GPIOs:</string>
+    <string name="test_gpio_input">GPIOs Input Test Result</string>
+    <string name="gpio">GPIO</string>
+    <string name="n_p_h">N.P.H</string>
+    <string name="n_p_l">N.P.L</string>
+    <string name="p_d_h">P.D.H</string>
+    <string name="p_d_l">P.D.L</string>
+    <string name="p_u_h">P.U.H</string>
+    <string name="p_u_l">P.U.L</string>
+    <string name="nucleo_gpio_pins">nucleo gpio pins</string>
+    <string name="test_result">Test Duration: </string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="nucleo_board_tester">Nucleo Board Tester</string>
+    <string name="power_amp_gnd_pins_test_result"><![CDATA[Power & GND Pins Test Result]]></string>
+    <string name="current_a">Current (A)</string>
+    <string name="indicate_test_state">indicate test state</string>
+    <string name="remove_board">remove board</string>
+    <string name="inputNoPullHighImage">inputNoPullHigh image</string>
+    <string name="inputNoPullLowImage">inputNoPullLow image</string>
+    <string name="inputPullDownHighImage">inputPullDownHigh image</string>
+    <string name="inputPullDownLowImage">inputPullDownLow image</string>
+    <string name="inputPullUpHighImage">inputPullUpHigh image</string>
+    <string name="inputPullUpLowImage">inputPullUpLow image</string>
+    <string name="outputPullUpLowImage">outputPullUpLow image</string>
+    <string name="outputPullUpHighImage">outputPullUpHigh image</string>
+    <string name="outputPullDownLowImage">outputPullDownLow image</string>
+    <string name="outputPullDownHighImage">outputPullDownHigh image</string>
+    <string name="outputNoPullLowImage">outputNoPullLow image</string>
+    <string name="outputNoPullHighImage">outputNoPullHigh image</string>
+    <string name="add_new_board">Add New Board</string>
+    <string name="submit_board">submit Board</string>
+    <string name="connection_image_new_board_image">connection Image New Board image</string>
+    <string name="boardid">Nucleo Board: </string>
+    <string name="board_power_and_gnd_pins">Test Power and GND Pins</string>
+    <string name="board_flash">Test Flash-Memory</string>
+    <string name="flash_result">Flash-Memory Test Result</string>
+    <string name="board_temperature">Measure Temperature</string>
+    <string name="temperature_arrow">temperature arrow</string>
+    <string name="board_gpio_input_test">Test GPIOs Input</string>
+    <string name="board_gpio_output_test">Test GPIOs Output</string>
+    <string name="input_arrow">input arrow</string>
+    <string name="flash_arrow">flash arrow</string>
+    <string name="power_state">power state</string>
+    <string name="gnd_state">gnd state</string>
+    <string name="board_complete_test">Board Complete Test</string>
+    <string name="power_and_gnd_pins_arrow">power and gnd pins arrow</string>
+    <string name="gpio_input_test_result">GPIOs Input Test Result</string>
+    <string name="connection_state">connection state</string>
+    <string name="output_arrow">Output Arrow</string>
+    <string name="output_gpio_output_test_result">GPIOs Output Test Result</string>
+    <string name="complete_test_arrow">complete Test Arrow</string>
+    <string name="bht_header">BHT Header</string>
+    <string name="nucleo_board_main">nucleo board main</string>
+    <string name="new_server_ip_address">Server IP-Address</string>
+    <string name="submit_ip_address">Connect</string>
+    <string name="server_configuration">New Server Connection</string>
+    <string name="test_gpio_output">GPIOs Output Test Result</string>
+    <string name="abbreviation_output">- N.P.H = No Pull HIGH \n- N.P.L = No Pull LOW \n- P.D.H = Pull Down HIGH \n- P.D.L = Pull Down LOW \n- P.U.H = Pull Up HIGH \n- P.U.L = Pull Up LOW</string>
+    <string name="gpio_output_pins_image">gpio output pins image</string>
+    <string name="connection_image_board_list">connection image board list</string>
+    <string name="home">Home</string>
+    <string name="new_board">New Board</string>
+    <string name="new_server">New Server</string>
+    <string name="information">Information</string>
+    <string name="back_button">back button</string>
+    <string name="gpio_short_circuits_test">GPIOs Short Circuit Test Result</string>
+    <string name="short_circuits_count">Short Circuits Count</string>
+    <string name="connected_pins">Connected Pins</string>
+    <string name="test_gpios_short_circuit">Test GPIOs Short Circuit</string>
+    <string name="gpios_short_circuit_test_result">GPIOs Short Circuit Test Result</string>
+    <string name="nucleo_status">Nucleo Status</string>
+    <string name="activate_usb_port">Activate USB-Port</string>
+    <string name="power_off">Power Off</string>
+    <string name="export_log_files">Export Log Files</string>
+    <string name="analog_input_test_result">Analog Input Test Result</string>
+    <string name="test_analog_input">Test Analog Input</string>
+    <string name="test_continuity">Test GPIOs Continuity</string>
+    <string name="measure_current_consumption">Measure Current Consumption</string>
+    <string name="gpios_continuity_test_result">GPIOs Continuity Test Result</string>
+    <string name="image">Image</string>
+    <string name="log_files">Log Files</string>
+    <string name="nucleo_board_id">Nucleo Board Name:</string>
+    <string name="remove_log_file">remove log file</string>
+    <string name="set_voltage">Set Voltage</string>
+    <string name="measured_voltage">Measured Voltage</string>
+    <string name="_0_00_v">0.00 V</string>
+    <string name="_1_00_v">1.00 V</string>
+    <string name="_2_30_v">2.30 V</string>
+    <string name="_3_30_v">3.30 V</string>
+    <string name="flash_memory_errors">Flash-Memory Errors:</string>
+    <string name="upload_test_program">Upload Test-Program:</string>
+</resources>

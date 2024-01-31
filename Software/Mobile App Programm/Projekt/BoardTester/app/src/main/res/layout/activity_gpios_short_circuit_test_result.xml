@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="testResults.GpiosShortCircuitTestResultActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="268dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/nucleo_pins"
+                    android:contentDescription="@string/gpio_output_pins_image" />
+                <ImageButton
+                    android:id="@+id/backButtonShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="@string/back_button" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gpio_short_circuits_test"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/GpioShortCircuitTestTimeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="11sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/testResultTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:text="@string/nucleo_board_id"
+                    android:textStyle="bold"
+                    android:layout_gravity="start" />
+                <TextView
+                    android:id="@+id/testGpiosShortBoardID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/testResultTitle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/not_tested_gpio"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+            <TextView
+                android:id="@+id/notTestableGpioShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dcdcdc"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:background="#dcdcdc"
+                    android:textColor="#000000"
+                    android:text="@string/gpio" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="#dcdcdc"
+                    android:textColor="#000000"
+                    android:text="@string/short_circuits_count" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.2"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:background="#dcdcdc"
+                    android:textColor="#000000"
+                    android:text="@string/connected_pins" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark1"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGpioShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stackFromBottom="false"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

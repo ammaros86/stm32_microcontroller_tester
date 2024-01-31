@@ -1,0 +1,93 @@
+Test Nucleo Board 17/10/2023 02:03:33
+Program Start
+================================================================================
+                                       Test GPIOs Continuity
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:03:40
+* GPIOs Continuity Test Result: 
+-> 0 failed Test 
+-> 0 Shorted GPIOs to GND or VCC 
+-> 0 Open GPIOs or ESD-Damage 
+=> GPIOs Continuity Test Pass
+================================================================================
+                                      Power and GND Pins Test
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:03:55
+Power and GND Pins Test Result:
+-> 0 Failed to test Pins
+-> 0 Error Pins
+=> Power and GND Pins Test pass, No Errors
+================================================================================
+                                 Flash Test Program to Nucleo Board
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:03:58
+
+
+Upload Test-Programm to Nucleo Board Flash
+=> Write Test-Programm success
+Version      : 0x31
+Option 1     : 0x00
+Option 2     : 0x00
+Device ID    : 0x0446 (STM32F302xD(E)/F303xD(E)/F398xx)
+- RAM        : 64KiB  (6144b reserved by bootloader)
+- Flash      : 512KiB (size first sector: 2x2048)
+- Option RAM : 16b
+- System RAM : 8KiB
+
+--------------------------------------------------------------------------------
+Test Flash Memory
+--------------------------------------------------------------------------------
+=> Flash Memory Test pass
+================================================================================
+                         Measure STM32 Microcontroller Current Consumption
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:04:39
+=> Microcontroller High Current Consumption detected: 163.50 mA
+ => Microcontroller Current Consumption:  fail
+================================================================================
+                                  Measure Nucleo Board Temperature
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:04:41
+
+ => Board temperature: 38.96 Celcius
+================================================================================
+                                          Test GPIOs Input
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:04:42
+================================================================================
+================================================================================
+================================================================================
+  Digital Input Test Result: 
+=> Digital Input Test pass, No Errors
+================================================================================
+                                         Test GPIOs Output
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:04:50
+  Digital Output Test Result: 
+=> Digital Output Test pass, No Errors
+================================================================================
+                                      Test GPIOs Short Circuit
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:05:12
+ GPIOs Short Circuit Test Result: 
+=> Test pass: 0 Short Circuits, 0 Errors
+================================================================================
+                                         Test Analog Input
+                                        Unknown Nucleo Board
+                                        17/10/2023 02:05:55
+  Analog Input Test Result: 
+=> Analog Input Test pass, No Errors
+================================================================================
+Complete Test done: 
+- High Current Consumption detected: 163.50 mA
+- Board Temperature: 38.96 Celcius
+- Microcontroller Power and GND Pins OK
+- GPIOs Continuity Test: pass
+- Flash Test-Programm: OK
+- Flash Memory: OK
+- GPIOs Input Test: pass
+- GPIOs Output Test: pass
+- GPIOs Short Circuit Test: pass
+- Analog Input Test: pass
+--------------------------------------------------------------------------------
+=> Micrcontroller Errors: 1

@@ -1,0 +1,2 @@
+../Core/Src/adc_handler.c:4:5:intialADC	40	static
+../Core/Src/adc_handler.c:36:10:readAdc	24	static

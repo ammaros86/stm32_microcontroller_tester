@@ -17,11 +17,7 @@ The hardware involves the creation of two boards. The main board integrates vari
 The developed testing device has been successfully implemented at the the Berliner Hochschule für Technik and is currently being utilized by laboratory engineers to conduct regular and thorough inspections of the Nucleo boards.
 
  
-
-
-
-
-On the LCD screen, 11 entries are displayed. From these, the user can select and execute a specific function using either the buttons or the app. Let me elaborate on these commands:
+On the LCD screen, 15 entries are displayed. From these, the user can select and execute a specific function using either the buttons or the app. Let me elaborate on these commands:
 
 - New Board: This command should be selected and executed before connecting a Nucleo board to the test device. It's designed to prevent short circuits when inserting the Nucleo board into the test device's connector. During this process, the interrupts of the four buttons on the test device and other device functions are disabled. Once the Nucleo board is inserted, the red button should be continuously pressed for at least three seconds to reactivate the interrupts and proceed with the tests. Following this, the test device conducts a check to ensure the proper connection of the Nucleo board. This includes verifying the USB connection and the physical connection. To accomplish this, the PCB incorporates pull-down resistors on the Nucleo board's supply pins and pull-up resistors on its GND pins. Voltage measurements on these pins can confirm the correct connection of the Nucleo board and verify interconnections of the GND pins.
 

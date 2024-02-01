@@ -7,5 +7,5 @@ The implementation of the test device software is divided into four programs:
 
 
 <p align="center">
-  <img src="https://github.com/ammaros86/stm32_microcontroller_tester/issues/1#issue-2109925279" />
+  <img src="https://github.com/ammaros86/stm32_microcontroller_tester/assets/56800295/e2d00e55-f4b6-41d0-9f43-a1b2d94f1220" />
 </p>

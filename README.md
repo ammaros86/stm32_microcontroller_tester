@@ -11,7 +11,9 @@ The hardware involves the creation of two boards. The main board integrates vari
 
 The developed testing device has been successfully implemented at the the Berliner Hochschule für Technik and is currently being utilized by laboratory engineers to conduct regular and thorough inspections of the Nucleo boards.
 
-![connection_mobile_machine](https://github.com/ammaros86/stm32_microcontroller_tester/assets/56800295/d110b6a0-f0d8-428b-81c0-94b64c6a2f4f)
+ 
+![Unbenannt](https://github.com/ammaros86/stm32_microcontroller_tester/assets/56800295/4d68d2fe-d07b-4d6e-a9be-8d518043daf1)
+
 
 
 On the LCD screen, 11 entries are displayed. From these, the user can select and execute a specific function using either the buttons or the app. Let me elaborate on these commands:

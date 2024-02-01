@@ -1,9 +1,14 @@
-✔ Development of a Testing System for STM32 Microcontrollers ✔
+  ✔ Development of a Testing System for STM32 Microcontrollers ✔
+
 
 During my master's thesis at the Berliner Hochschule für Technik, the focus was on developing a testing system for STM32 microcontrollers, particularly the STM32-Nucleo-Board F303RE.
 The primary goal was to identify defects in these single-board computers, which are used as programmable control units in various fields such as control engineering and measurement technology.
 
 Students utilize these microcontrollers for writing, testing, and developing new programs. However, their application and usage can lead to functional impairments and defects. Undetected defects can create uncertainties among students, questioning whether occurring errors are attributable to their custom software or potential hardware issues.
+
+<p align="center">
+  <img src="https://github.com/ammaros86/stm32_microcontroller_tester/assets/56800295/4d68d2fe-d07b-4d6e-a9be-8d518043daf1" />
+</p>
 
 To address these challenges, I developed an embedded testing system capable of quickly and reliably detecting defects on the STM32-F303RE board. The testing system allows for a comprehensive examination of pins, flash memory, power consumption, and the temperature of the microcontroller. Additionally, it can verify the continuity of GPIOs. The results are logged in files on the device and can also be stored in a database.
 The testing device is designed to be user-friendly, featuring an LCD display and control buttons. To simplify handling and result evaluation, a web server, a database, and an Android app were developed. 
@@ -12,7 +17,7 @@ The hardware involves the creation of two boards. The main board integrates vari
 The developed testing device has been successfully implemented at the the Berliner Hochschule für Technik and is currently being utilized by laboratory engineers to conduct regular and thorough inspections of the Nucleo boards.
 
  
-![Unbenannt](https://github.com/ammaros86/stm32_microcontroller_tester/assets/56800295/4d68d2fe-d07b-4d6e-a9be-8d518043daf1)
+
 
 
 

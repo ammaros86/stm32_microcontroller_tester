@@ -11,13 +11,13 @@ Students utilize these microcontrollers for writing, testing, and developing new
 </p>
 
 To address these challenges, I developed an embedded testing system capable of quickly and reliably detecting defects on the STM32-F303RE board. The testing system allows for a comprehensive examination of pins, flash memory, power consumption, and the temperature of the microcontroller. Additionally, it can verify the continuity of GPIOs. The results are logged in files on the device and can also be stored in a database.
-The testing device is designed to be user-friendly, featuring an LCD display and control buttons. To simplify handling and result evaluation, a web server, a database, and an Android app were developed. 
+The testing device is designed to be user-friendly, featuring an LCD and control buttons. To simplify handling and result evaluation, a web server, a database, and an Android app were developed. 
 The hardware involves the creation of two boards. The main board integrates various components such as analog-to-digital converters, digital-to-analog converters, a constant current source, and multiple analog bidirectional multiplexers. The software was implemented in programming languages including C++, C, Java, and PHP, utilizing three interfaces (UART, SPI, I2C).
 
 The developed testing device has been successfully implemented at the the Berliner Hochschule für Technik and is currently being utilized by laboratory engineers to conduct regular and thorough inspections of the Nucleo boards.
 
  
-On the LCD screen, 15 entries are displayed. From these, the user can select and execute a specific function using either the buttons or the app. Let me elaborate on these commands:
+On the LCD, 15 entries are displayed. From these, the user can select and execute a specific function using either the buttons or the app. Let me elaborate on these commands:
 
 - New Board: This command should be selected and executed before connecting a Nucleo board to the test device. It's designed to prevent short circuits when inserting the Nucleo board into the test device's connector. During this process, the interrupts of the four buttons on the test device and other device functions are disabled. Once the Nucleo board is inserted, the red button should be continuously pressed for at least three seconds to reactivate the interrupts and proceed with the tests. Following this, the test device conducts a check to ensure the proper connection of the Nucleo board. This includes verifying the USB connection and the physical connection. To accomplish this, the PCB incorporates pull-down resistors on the Nucleo board's supply pins and pull-up resistors on its GND pins. Voltage measurements on these pins can confirm the correct connection of the Nucleo board and verify interconnections of the GND pins.
 
@@ -41,7 +41,7 @@ On the LCD screen, 15 entries are displayed. From these, the user can select and
 
 - Analog Pins Test: The Nucleo Board boasts 22 analog pins, each of which can be tested using digital-to-analog converters. For this test, all 22 pins are configured as analog inputs. The test device then sequentially applies five different voltages to each input pin. Subsequently, the measured values are transmitted to the test device for comparison with expected values, allowing for the identification of any discrepancies.
 
-- Server IP Address: The IP address of the web server is essential for establishing a connection between the Android app and the test device. Upon executing this command, the IP address is promptly displayed on the LCD screen.
+- Server IP Address: The IP address of the web server is essential for establishing a connection between the Android app and the test device. Upon executing this command, the IP address is promptly displayed on the LCD.
 
 - Copy Log Files: Log files containing test results from both button and app-initiated tests can be transferred to a USB stick using this command.
 
